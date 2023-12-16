@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo App</title>
+<link rel="stylesheet" href="todo.css">
+</head>
+<body>
+<main id="main-holder"> 
+<div id="todoApp">
+    <ul id="taskList">
+        <li class="task-item">Attend Lec 2&nbsp;&nbsp;&nbsp; <button class="done-btn" onclick="markDone(this)">✓</button><button class="delete-btn" onclick="deleteTask(this)">✗</button></li>
+        <li class="task-item">Complete Lab 2<button class="done-btn" onclick="markDone(this)">✓</button><button class="delete-btn" onclick="deleteTask(this)">✗</button></li>
+        <li class="task-item">Complete Bonus<button class="done-btn" onclick="markDone(this)">✓</button><button class="delete-btn" onclick="deleteTask(this)">✗</button></li>
+    </ul>
+    <input type="text" id="task-holder" placeholder="Enter new task">
+    <button class="addTask" onclick="addTask()">Add Task</button>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
