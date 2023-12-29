@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script>
+    function displayUsers() 
+    {
+      var url = "https://reqres.in/api/users?page=2"
+    
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          
+          var users = document.getElementById("users");
+          
+          var html = "";
+          
+          for (var i = 0; i < data.data.length; i++) 
+          {
+            var user = data.data[i];
+            html += `<img src="${user.avatar}" alt="${user.first_name} ${user.last_name}"><p>${user.email}</p>`
+          }
+          users.innerHTML = html;
+        });
+    }
+  </script>
+</head>
+<body onload="displayUsers()">
+  <div id="users"></div>
+</body>
+</html>

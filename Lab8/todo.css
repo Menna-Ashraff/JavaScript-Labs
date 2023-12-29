@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #6abe4e;
+  }
+
+
+  #main-holder {
+    width: 30%;
+    height: 40%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 2px #5bab41;
+  }
+  
+#todoApp {
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+
+#task-holder {
+    width: 50%;
+    height: 9px;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+.addTask {
+    position: relative;
+    float: right;
+    width: 30%;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 10px;
+    background-color: #268e04;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    margin: 10px 0;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.done-btn {
+    background-color: #00b242;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+   float: left;
+}
+
+.delete-btn {
+    background-color: #d11b1b;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    float: inline-end;
+}
